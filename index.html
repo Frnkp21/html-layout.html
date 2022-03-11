@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+
+
+        img {width: 110px}
+
+        caja1{
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+        }
+
+
+        caja2{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        caja3{
+            display: flex;
+            justify-content: center;
+            background-color: lightgrey;
+            padding: 150px;
+        }
+
+        .caja4{
+            display: flex;
+            justify-content: center;
+            resize: both;
+            overflow: auto;
+            display: flex;
+            background-color: lightskyblue;
+        }
+
+
+
+        .caja5{
+            display: flex;
+            flex-wrap: wrap;
+            resize: both;
+            overflow: auto;
+            justify-content: center;
+
+            background-color: lightskyblue;
+        }
+        .caja6{
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: minmax(150px, 25%) 1fr;
+        }
+        .caja7{
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        .caja8{
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: auto 1fr auto;
+        }
+        .caja9{
+          resize: both;
+          overflow: auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+      .caja10{
+      resize: both;
+      overflow: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      padding: 1em;
+      border: 1px solid blue;
+    }
+
+
+
+        .p2{
+            background-color: lightyellow;
+            flex: 0 1 150px;
+            margin: 5px;
+        }
+        .p3{
+            background-color: lightpink;
+        }
+        .p4{
+            background-color: lightsalmon;
+        }
+        .p5{
+            background-color: lightskyblue;
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: auto 1fr auto;
+        }
+        .p6{
+            background-color: lightgreen;
+
+        }
+
+
+
+
+        .p6-1{
+            background-color: lightpink;
+            grid-column: 1 / 4;
+        }
+        .p6-2{
+            background-color: lightskyblue;
+        }
+        .p6-3{
+          background-color: lightsalmon;
+        }
+        .p6-4{
+            background-color: lightyellow;
+            flex: 0 1 150px;
+            margin: 5px;
+        }
+        .p6-5{
+            background-color: lightgreen;
+            grid-column: 1 /4;
+        }
+
+        .p7-1{
+            background-color:lightpink;
+        }
+        .p7-2 {
+            background-color: lightblue;
+        }
+        .p7-3 {
+            background-color: lightsalmon;
+        }
+        .p7-4 {
+            background-color: lightyellow;
+        }
+
+        .p8-1{
+            background-color:lightpink;
+        }
+        .p8-2 {
+            background-color: lightblue;
+        }
+        .p8-3 {
+            background-color: lightsalmon;
+        }
+        .p8-4 {
+            background-color: lightyellow;
+        }
+
+
+    </style>
+    <h1> ejercicio 1</h1>
+
+    <caja1>
+        <span>🤖</span>
+        <span>RobotWeb</span>
+        <span>🔎</span>
+    </caja1>
+
+    <caja2>
+        <img src="1.webp">
+        <img src="2.webp">
+        <img src="3.webp">
+        <img src="4.webp">
+    </caja2>
+
+
+    <caja3>
+        <p class="p1">Welcome to RobotWeb</p>
+    </caja3>
+    <h1> ejercicio 2</h1>
+
+    <div class="caja4">
+        <div contenteditable="true"class="p2">Estoy siempre centrado</div>
+    </div>
+    <h1> ejercicio 3</h1>
+
+    <div class="caja5">
+        <div contenteditable="true"class="p2"> Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+
+        <div contenteditable="true"class="p2"> Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+
+        <div contenteditable="true"class="p2"> Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+    </div>
+    <h1> ejercicio 4</h1>
+
+    <div class="caja6">
+      <div contenteditable="true"class="p2"> tengo un ancho minimo de 150px, y un maximo del 25% <br> []</div>
+      <div contenteditable="true"class="p3"> ocupo el resto del espaio sobrante <br> []</div>
+    </div>
+    <h1> ejercicio 5</h1>
+
+    <div class="caja7">
+      <div contenteditable="true"class="p2"> ocupo solo la altura que necesito <br> []</div>
+      <div contenteditable="true"class="p4"> ocupo el resto de altura sobrante <br> []</div>
+      <div contenteditable="true"class="p3"> ocupo solo la altura que necesito <br> []</div>
+    </div>
+    <h1> ejercicio 6</h1>
+
+    <div class="caja8">
+      <div contenteditable="true"class="p6-1"> ocupo solo la altura que necesito <br> []</div>
+      <div contenteditable="true"class="p6-2"> ocupo el ancho que necesito, <br> y crezco de altura <br> []</div>
+      <div contenteditable="true"class="p6-3"> ocupo el ancho restante, <br> y crezco de altura <br> []</div>
+      <div contenteditable="true"class="p6-4"> ocupo el ancho que necesito, <br> y crezco de altura <br> []</div>
+      <div contenteditable="true"class="p6-5"> ocupo solo la altura que necesito <br> []</div>
+    </div>
+      <h1> ejercicio 7</h1>
+          <div class="caja9">
+              <div class="p7-1" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+              <div class="p7-2" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+              <div class="p7-3" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+              <div class="p7-4" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+          </div>
+          <h3>Ejercicio 8:</h3>
+
+              <div class="caja10">
+                  <div class="p8-1" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+                  <div class="p8-2" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+                  <div class="p8-3" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+                  <div class="p8-4" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+              </div>
+</body>
+</html>
